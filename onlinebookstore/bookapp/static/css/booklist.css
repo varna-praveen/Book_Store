@@ -1,0 +1,212 @@
+.custom-card {
+            width: 100%;
+            margin: 50px;
+
+}
+
+.card-body {
+            text-align: left;
+}
+
+
+
+
+
+
+.custom-card-img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+body {
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+     margin: 0;
+}
+/* Style for the navigation bar */
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+
+
+/* Add a box hover effect to the login and signup links */
+.login-signup a {
+    padding: 8px 6px; /* Add padding to create the box effect */
+    border-radius: 3px; /* Add rounded corners to the box */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+.login-signup .login:hover {
+    background-color: green; /* Green background color on hover for Login */
+}
+
+.login-signup .signup:hover {
+    background-color: red; /* Red background color on hover for Signup */
+}
+.login-signup a:hover {
+    background-color: blue; /* Change to your desired hover background color */
+    color: white; /* Change the text color on hover */
+    text-decoration: none; /* Remove underline on hover */
+}
+
+
+/* Style for the login-signup links */
+.login-signup {
+    display:flex;
+     justify-content: flex-end;
+      align-items: center;
+    margin-left: auto;
+    margin-right:10px;
+
+    gap: 10px; /* Adjust the gap between Login and Signup links */
+}
+
+
+/* Change the color of the Login link */
+.login-link {
+    color: green; /* Change to your desired color */
+}
+
+/* Change the color of the Signup link */
+.signup-link {
+    color: red; /* Change to your desired color */
+}
+.cart-button p:hover  {
+                        color: orange;
+                    }
+
+/*.cart-button a:hover i {
+                        color: red;
+                    }*/
+
+
+ /* Adjust the font size of the cart text */
+.cart-button p {
+    font-size: 10px;
+     color:#000;/* Change to your desired font size */
+}
+
+
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+}
+
+/* Style for the search input and button */
+.custom-search-form {
+    text-align: center;
+
+}
+
+.custom-search-form input[type="text"] {
+    width: 200px;
+    padding: 5px;
+    margin: 5px;
+    vertical-align: middle;
+}
+
+.custom-search-form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin: 5px;
+    vertical-align: middle;
+}
+
+.container1{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color:transparent;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+.container{
+    position:relative;
+    background-attachment: fixed;
+}
+/* Style for the tooltip */
+.custom-tooltip {
+    position: relative;
+    display: inline-block;
+}
+.custom-tooltip .tooltip-text {
+     visibility: hidden;
+     width: 120px;
+            background-color: blue;
+            color: white;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%; /* Position the tooltip above the element */
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .custom-tooltip:hover .tooltip-text {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        /* CSS for the sliding header images */
+        @keyframes header-slideshow {
+            0% {
+                opacity: 0;
+            }
+            20% {
+                opacity: 1;
+            }
+            80% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+
+        .header-slideshow {
+            position: relative;
+            width: 100%;
+            max-height: 400px;
+            overflow: hidden;
+        }
+
+        .header-slideshow img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            animation: header-slideshow 8s infinite;
+            width: 100%;
+            height: auto;
+        }
+
+        .header-slideshow img:nth-child(1) {
+            animation-delay: 0s;
+        }
+
+        .header-slideshow img:nth-child(2) {
+            animation-delay: 4s;
+        }
+
+        .header-slideshow img:nth-child(3) {
+            animation-delay: 8s;
+        }

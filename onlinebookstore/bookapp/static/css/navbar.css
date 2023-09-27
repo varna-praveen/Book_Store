@@ -1,0 +1,27 @@
+/* custom.css */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+/* Add custom styles for the navigation bar */
+.navbar {
+    background-color: #333; /* Change the background color */
+    color: white; /* Change the text color */
+    position: fixed;
+    top: 0; /* Fix the navbar at the top of the page */
+    width: 100%; /* Make it full-width */
+    z-index: 1000;
+}
+
+.navbar-brand {
+    font-size: 24px; /* Change the font size of the brand name */
+}
+/* Add custom styles for the footer in the detail view */
+footer {
+    background-color: #333; /* Change the background color */
+    color: white; /* Change the text color */
+    padding: 10px 0px; /* Add padding on left and right sides */
+
+    clear: both; /* Ensure that the footer clears both left and right content */
+    max-width:100%;
+}
+body{
+ padding-bottom: 0 !important;
+}

@@ -1,0 +1,19 @@
+/* Style the images within the search results */
+img {
+    max-width: 100%; /* Ensure images don't exceed their container's width */
+    height: 800px; /* Maintain the aspect ratio of the images */
+    border: 1px solid #ccc; /* Add a border around the images */
+    margin: 10px; /* Add some spacing around the images */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow to the images */
+    transition: transform 0.3s ease-in-out; /* Add a smooth hover effect */
+}
+
+/* Style the images on hover */
+img:hover {
+    transform: scale(1.1); /* Scale up the image slightly on hover */
+}
+
+/* mycart.css */
+.image-col {
+    margin-bottom: 20px; /* Adjust the value to increase or decrease spacing */
+}

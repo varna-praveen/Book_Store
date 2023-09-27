@@ -1,0 +1,44 @@
+{% extends 'navbar.html' %}
+<!--{% block title %}Search{% endblock title %}-->
+{% block content %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search</title>
+    <link rel="stylesheet" href="{% static 'css/search_results.css' %">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</head>
+<body style="margin-top: 80px;">
+<div class="container-fluid">
+    <h3 class="text-primary">Search Results</h3>
+    <div class="temp my-3 border rounded border-dark main-content">
+        <div class="row no-gutters" >
+            {% for every in object_list %}
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="col-sm image-col">
+                        <a href="{% url 'detail_view' every.id %}">
+                            <img src="{{every.image_url}}" alt="...">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="box">
+                    <p>Author:{{every.author}}</p>
+                    <p>{{every.description}}</p>
+                </div>
+            </div>
+            {% empty %}
+            <h5 class="text-secondary">Not Found :(</h5>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+</body>
+</html>
+{% endblock content %}

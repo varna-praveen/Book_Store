@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightblue;
+
+}
+
+.temp {
+    background-color: white;
+    margin-top:10em;
+    padding-top:10px;
+    border:
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    border: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+     width: 100%;
+     height: 350px;
+     object-fit: cover;
+}
+
+.box {
+    padding: 20px;
+}
+
+.navbar {
+    background-color: black;
+    color: lightblue;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Add custom styles for the main content in the detail view */
+.main-content {
+    min-height: calc(100vh - 60px); /* Adjust for the navbar height */
+    padding-bottom: 0; /* Remove padding at the bottom */
+}
